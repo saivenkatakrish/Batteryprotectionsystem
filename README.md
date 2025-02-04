@@ -48,28 +48,35 @@ Monitors battery temperature, voltage, and current using sensors.
 Transmits data to the ESP8266 via serial communication (RX/TX).
 
 
-ESP8266
-
+ESP8266:
 Uploads sensor data to Firebase.
 Controls the relay to manage battery power supply based on thresholds.
 Receives control signals from Firebase for remote power management.
 
 
-Firebase
-
+Firebase:
 Stores and retrieves real-time sensor data.
 Facilitates seamless interaction between hardware and the mobile application.
 
 
-Mobile Application
-
+Mobile Application:
 Displays real-time battery data (temperature, voltage, current).
+
 Allows users to control the battery supply remotely.
+
 Protocols and Communication
+
+
 Serial Communication: Between Arduino Mega and ESP8266 for data transmission.
+
 Wi-Fi Communication: Between ESP8266 and Firebase for real-time data exchange.
+
 I2C Protocol: Between Arduino Mega and the I2C display for real-time data visualization.
+
+
 Contributions
+
+
 Designed and integrated hardware components (Arduino Mega, ESP8266, sensors, display, relay module).
 Programmed the Arduino Mega for sensor monitoring and data transmission.
 Configured ESP8266 for Wi-Fi setup, data handling, and relay control.
