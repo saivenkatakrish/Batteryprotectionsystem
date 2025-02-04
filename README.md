@@ -1,4 +1,4 @@
-**Battery Protection System**
+Battery Protection System
 Overview
 The Battery Protection System is designed to enhance battery life, prevent overheating, and reduce fire hazards by automatically controlling the supply to the connected vehicle based on real-time data. The system also supports remote monitoring and control via a mobile application, ensuring safe and efficient battery operation.
 
