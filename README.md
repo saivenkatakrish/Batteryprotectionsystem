@@ -1,36 +1,66 @@
 Battery Protection System
+
+
 Overview
+
+
+
 The Battery Protection System is designed to enhance battery life, prevent overheating, and reduce fire hazards by automatically controlling the supply to the connected vehicle based on real-time data. The system also supports remote monitoring and control via a mobile application, ensuring safe and efficient battery operation.
 
 Features
+
+
 Automatic Safety Mechanism: Monitors temperature, voltage, and current to prevent overheating, overvoltage, and undervoltage conditions.
+
 Remote Monitoring and Control: Allows users to access real-time battery data and control power supply via a mobile application.
+
 Cloud Integration: Uses Firebase for real-time data storage and retrieval.
+
 User-Defined Control: Enables users to manually turn the battery supply on or off remotely.
+
 Components Used
+
+
 Arduino Mega: Core processing unit for sensor monitoring.
+
 ESP8266 Wi-Fi Module: Handles wireless data transfer and relay control.
+
 Voltage Sensor: Detects undervoltage and overvoltage conditions.
+
 Current Sensor (ACS712): Measures the battery's current flow.
+
 DHT11 Sensor: Monitors the ambient temperature of the battery system.
+
 I2C Display: Provides a real-time display of monitored data.
+
 Relay Module: Controls the power supply based on sensor data.
+
 Firebase: Cloud platform for data storage and retrieval.
+
 Mobile Application: Built with App Inventor for remote monitoring and control.
+
 Working Process
+
+
 Arduino Mega
 
 Monitors battery temperature, voltage, and current using sensors.
 Transmits data to the ESP8266 via serial communication (RX/TX).
+
+
 ESP8266
 
 Uploads sensor data to Firebase.
 Controls the relay to manage battery power supply based on thresholds.
 Receives control signals from Firebase for remote power management.
+
+
 Firebase
 
 Stores and retrieves real-time sensor data.
 Facilitates seamless interaction between hardware and the mobile application.
+
+
 Mobile Application
 
 Displays real-time battery data (temperature, voltage, current).
